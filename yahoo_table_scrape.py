@@ -15,9 +15,9 @@ if(len(sys.argv) > 1):
 
 else:
     column_name = 'Adj Close*' #default column
-#end arg parsing
 
 
+#begin web parsing
 response = urllib.request.urlopen('http://finance.yahoo.com/q/hp?s=TSLA+Historical+Prices')
 
 html = response.read()
